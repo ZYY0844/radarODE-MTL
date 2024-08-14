@@ -10,13 +10,24 @@ Code for Paper:
 
 :partying_face: Any problem please send them in Issues or eamil [:email:](yuanyuan.zhang16@student.xjtlu.edu.cn).
 
+## Citation
+
+If you find our work helpful for your research, please cite our paper:
+```
+@article{zhang2024radarODE,
+  title={{radarODE: An ODE-embedded deep learning model for contactless ECG reconstruction from millimeter-wave radar}}, 
+  author={Yuanyuan Zhang and Runwei Guan and Lingxiao Li and Rui Yang and Yutao Yue and Eng Gee Lim},
+  year={2024},
+  month={Aug.},
+  journal={arXiv preprint arXiv:2408.01672 [eess]},
+  month={Aug.},
+}
+```
+
 ## Dataset Download
 Please refer to [MMECG Dataset](https://github.com/jinbochen0823/RCG2ECG) for the Dataset downloading.
 
 ### Run a Model
-
-The complete training code for the NYUv2 dataset is provided in [examples/nyu](./examples/nyu). The file [main.py](./examples/nyu/main.py) is the main file for training on the NYUv2 dataset.
-
 You can find the arguments and settings in.
 
 ```shell
@@ -41,20 +52,6 @@ More details on the available MTL Architectures, Optimization Strategies, Datase
 
 ### Result from our methods in the presence body movement
 <img src='image/result.jpg' width=700>
-
-## Citation
-
-If you find our work helpful for your research, please cite our paper:
-```
-@article{zhang2024radarODE,
-  title={{radarODE: An ODE-embedded deep learning model for contactless ECG reconstruction from millimeter-wave radar}}, 
-  author={Yuanyuan Zhang and Runwei Guan and Lingxiao Li and Rui Yang and Yutao Yue and Eng Gee Lim},
-  year={2024},
-  month={Aug.},
-  journal={arXiv preprint arXiv:2408.01672 [eess]},
-  month={Aug.},
-}
-```
 
 ## License
 
