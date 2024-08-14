@@ -53,9 +53,16 @@ More details is represented in [Docs](https://libmtl.readthedocs.io/en/latest/do
 
 
 ## Quick Introduction
+### Overall Framework for radarODE
 <img src='image/radarODE.jpg' width=700>
+
+### Overall Framework for radarODE-MTL
 <img src='image/radarODE_MTL.jpg' width=700>
-<img src='image/scg_ecg.jpg' width=700>
+
+### Intuition behind ECG recovery based on signle cardiac cycle
+<img src='image/scg_ecg.jpg' width=350>
+
+### Result from our methods in the presence body movement
 <img src='image/result.jpg' width=700>
 
 ## Citation
