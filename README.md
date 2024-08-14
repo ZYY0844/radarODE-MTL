@@ -20,7 +20,7 @@ The complete training code for the NYUv2 dataset is provided in [examples/nyu](.
 You can find the arguments and settings in.
 
 ```shell
-python main.py -h
+radarODE-MTL/Projects/radarODE_plus/main.py
 ```
 
 More details on the available MTL Architectures, Optimization Strategies, Dataset please refer to [LibMTL](https://github.com/median-research-group/LibMTL).
