@@ -1,4 +1,10 @@
-# LibMTL
+# radarODE-MTL
+
+Code for Paper: 
+
+1. radarODE: An ODE-embedded deep learning model for contactless ECG reconstruction from millimeter-wave radar
+2. radarODE-MTL: A Multi-Task Learning Framework with Eccentric Gradient Alignment for Robust Radar-Based ECG Reconstruction
+
 
 [![Documentation Status](https://readthedocs.org/projects/libmtl/badge/?version=latest)](https://libmtl.readthedocs.io/en/latest/?badge=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/median-research-group/LibMTL/blob/main/LICENSE) [![PyPI version](https://badge.fury.io/py/LibMTL.svg)](https://badge.fury.io/py/LibMTL) [![Supported Python versions](https://img.shields.io/pypi/pyversions/LibMTL.svg?logo=python&logoColor=FFE873)](https://github.com/median-research-group/LibMTL) [![CodeFactor](https://www.codefactor.io/repository/github/median-research-group/libmtl/badge/main)](https://www.codefactor.io/repository/github/median-research-group/libmtl/overview/main) [![paper](https://img.shields.io/badge/Accepted%20by-JMLR-b31b1b.svg)](https://www.jmlr.org/papers/v24/22-0347.html) [![coverage](./tests/coverage.svg)](https://github.com/median-research-group/LibMTL) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmedian-research-group%2FLibMTL&count_bg=%23763DC8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://hits.seeyoufarm.com) [![Made With Love](https://img.shields.io/badge/Made%20With-Love-orange.svg)](https://github.com/median-research-group/LibMTL) 
 
@@ -140,34 +146,33 @@ python main.py --weighting EW --arch HPS --dataset_path /path/to/nyuv2 --gpu_id 
 
 More details is represented in [Docs](https://libmtl.readthedocs.io/en/latest/docs/getting_started/quick_start.html).
 
-## Citation
+<!-- ## Contributor
 
-If you find ``LibMTL`` useful for your research or development, please cite the following:
-
-```latex
-@article{lin2023libmtl,
-  title={{LibMTL}: A {P}ython Library for Multi-Task Learning},
-  author={Baijiong Lin and Yu Zhang},
-  journal={Journal of Machine Learning Research},
-  volume={24},
-  number={209},
-  pages={1--7},
-  year={2023}
-}
-```
-
-## Contributor
-
-``LibMTL`` is developed and maintained by [Baijiong Lin](https://baijiong-lin.github.io).
+``LibMTL`` is developed and maintained by [Baijiong Lin](https://baijiong-lin.github.io). -->
 
 ## Contact Us
 
 If you have any question or suggestion, please feel free to contact us by [raising an issue](https://github.com/median-research-group/LibMTL/issues) or sending an email to ``bj.lin.email@gmail.com``.
 
-## Acknowledgements
+<!-- ## Acknowledgements
 
 We would like to thank the authors that release the public repositories (listed alphabetically):  [CAGrad](https://github.com/Cranial-XIX/CAGrad), [dselect_k_moe](https://github.com/google-research/google-research/tree/master/dselect_k_moe), [MultiObjectiveOptimization](https://github.com/isl-org/MultiObjectiveOptimization), [mtan](https://github.com/lorenmt/mtan), [MTL](https://github.com/SamsungLabs/MTL), [nash-mtl](https://github.com/AvivNavon/nash-mtl), [pytorch_geometric](https://github.com/pyg-team/pytorch_geometric), and [xtreme](https://github.com/google-research/xtreme).
+ -->
+
+## Citation
+
+If you find our work helpful for your research, please cite our paper:
+```
+@article{zhang2024radarODE,
+  title={{radarODE: An ODE-embedded deep learning model for contactless ECG reconstruction from millimeter-wave radar}}, 
+  author={Yuanyuan Zhang and Runwei Guan and Lingxiao Li and Rui Yang and Yutao Yue and Eng Gee Lim},
+  year={2024},
+  month={Aug.},
+  journal={arXiv preprint arXiv:2408.01672 [eess]},
+  month={Aug.},
+}
+```
 
 ## License
 
-``LibMTL`` is released under the [MIT](./LICENSE) license.
+``radarODE-MTL`` is released under the [MIT](./LICENSE) license.
