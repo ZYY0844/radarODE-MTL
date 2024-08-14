@@ -9,7 +9,7 @@ Code for Paper:
 
 ``radarODE-MTL`` is an open-source library built on [PyTorch](https://pytorch.org/) and Multi-Task Learning (MTL) framework [LibMTL](https://github.com/median-research-group/LibMTL)
 
-:partying_face: Any problem please send them in Issues or [:email:](yuanyuan.zhang16@student.xjtlu.edu.cn).
+:partying_face: Any problem please send them in Issues or eamil [:email:](yuanyuan.zhang16@student.xjtlu.edu.cn).
 
 ## Dataset Download
 Please refer to [MMECG Dataset](https://github.com/jinbochen0823/RCG2ECG) for the Dataset downloading.
