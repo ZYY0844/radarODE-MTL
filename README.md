@@ -53,10 +53,10 @@ More details is represented in [Docs](https://libmtl.readthedocs.io/en/latest/do
 
 
 ## Quick Introduction
-<img src='image/radarODE.pdf' width=700>
-<img src='image/radarODE_MTL.pdf' width=700>
-<img src='image/scg_ecg.pdf' width=700>
-<img src='image/result.pdf' width=700>
+<img src='image/radarODE.jpg' width=700>
+<img src='image/radarODE_MTL.jpg' width=700>
+<img src='image/scg_ecg.jpg' width=700>
+<img src='image/result.jpg' width=700>
 
 ## Citation
 
