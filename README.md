@@ -27,14 +27,14 @@ If you find our work helpful for your research, please cite our paper:
 ## Dataset Download
 Please refer to [MMECG Dataset](https://github.com/jinbochen0823/RCG2ECG) for the Dataset downloading.
 
-### Run a Model
+## Run the Model
 You can find the arguments and settings in.
 
 ```shell
 radarODE-MTL/Projects/radarODE_plus/main.py
 ```
 
-More details on the available MTL Architectures, Optimization Strategies, Dataset please refer to [LibMTL](https://github.com/median-research-group/LibMTL).
+More details on the available MTL Architectures, Optimization Strategies and Datasets please refer to [LibMTL](https://github.com/median-research-group/LibMTL).
 <!-- ## Contributor
 
 ``LibMTL`` is developed and maintained by [Baijiong Lin](https://baijiong-lin.github.io). -->
