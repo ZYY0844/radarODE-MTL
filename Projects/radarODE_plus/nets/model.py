@@ -47,7 +47,7 @@ class shapeDecoder(nn.Module):
 # !!!!!
 # Only for illustration purposes, not used anywhere in the code 
 # !!!!!
-class ECGFormer(nn.Module):
+class radarODE_MTL(nn.Module):
     def __init__(self, in_channels=50, model_type='v1'):
         super().__init__()
 
@@ -87,7 +87,7 @@ class ECGFormer(nn.Module):
         return ppi, anchor, ecg_shape
 
 if __name__ == '__main__':
-    model = ECGFormer().cuda()
+    model = radarODE_MTL().cuda()
     input_data = torch.randn(2, 50, 71, 120).cuda()
     tgt_data = torch.randn(200, 1, 1).cuda()
     model.eval()

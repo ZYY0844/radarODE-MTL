@@ -126,7 +126,7 @@ class CNNLSTMDecoder(nn.Module):
                 m.bias.data.zeros_()
 
     def forward(self, x):
-        # all
+        # temp+ode, give the best result but time consuming due to the ode solver
         # x = self.conv(x)
         # x_temproal = self.out_conv(x)
         # x_temproal =  x_temproal.squeeze(1)
@@ -139,24 +139,17 @@ class CNNLSTMDecoder(nn.Module):
         # x_final = self.out_conv_final(x_final)
         # return x_final
     
-        # test only
-        # x_fusion = self.fusion_encoder_test(x_fusion.unsqueeze(1))
-        # return x_fusion
-
-        # ### temp only
+        # ### temp only, faster but not as good as temp+ode
         x = self.conv(x)
         x_temproal = self.out_conv(x)
         return x_temproal
     
-        # ### ode only 
+        # ### ode only, for ablation study only
         # x = self.conv(x)
         # param = self.param_estimator(x)
         # x_ode = ode1_solver(scale_output(param))
         # return x_ode.unsqueeze(1)
     
-        ##### first fusion methods, no multiply but stack
-        # x_fusion = torch.stack([x_temproal, x_ode, x_temproal, x_ode],dim=1).unsqueeze(1)
-        ##### second fusion methods, use multiply and stack
         
 class TransformerDecoder(nn.Module):
     def __init__(self, dim):

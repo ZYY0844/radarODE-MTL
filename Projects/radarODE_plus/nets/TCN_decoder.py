@@ -4,6 +4,7 @@ import torch.nn.functional as F
 from torch.nn.utils import weight_norm
 import math
 
+# used for MMECG and radarODE
 
 class ConvBlock(nn.Module):
     def __init__(self, in_channels, out_channels, kernel_size, stride, padding):
