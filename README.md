@@ -28,10 +28,15 @@ If you find our work helpful for your research, please cite our paper:
 Please refer to [MMECG Dataset](https://github.com/jinbochen0823/RCG2ECG) for the Dataset downloading.
 
 ## Run the Model
-You can find the arguments and settings in.
+You can find the arguments and settings in:
 
 ```shell
 radarODE-MTL/Projects/radarODE_plus/main.py
+```
+The model summary is in:
+
+```shell
+radarODE-MTL/Projects/radarODE_plus/nets/model.py
 ```
 
 More details on the available MTL Architectures, Optimization Strategies and Datasets please refer to [LibMTL](https://github.com/median-research-group/LibMTL).

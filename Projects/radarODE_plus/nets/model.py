@@ -44,6 +44,9 @@ class shapeDecoder(nn.Module):
         ecg_shape = self.decoder(ecg_shape)
         return ecg_shape
 
+# !!!!!
+# Only for illustration purposes, not used anywhere in the code 
+# !!!!!
 class ECGFormer(nn.Module):
     def __init__(self, in_channels=50, model_type='v1'):
         super().__init__()
