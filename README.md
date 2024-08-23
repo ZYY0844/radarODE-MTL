@@ -6,7 +6,7 @@ Code for Paper:
 1. [radarODE: An ODE-embedded deep learning model for contactless ECG reconstruction from millimeter-wave radar](https://arxiv.org/abs/2408.01672)
 2. radarODE-MTL: A Multi-Task Learning Framework with Eccentric Gradient Alignment for Robust Radar-Based ECG Reconstruction
 
-``radarODE-MTL`` is an open-source library built on [PyTorch](https://pytorch.org/) and Multi-Task Learning (MTL) framework [LibMTL](https://github.com/median-research-group/LibMTL)
+``radarODE-MTL`` is an open-source library built on [PyTorch](https://pytorch.org/) and Multi-Task Learning (MTL) framework [LibMTL](https://github.com/median-research-group/LibMTL).
 
 :partying_face: Any problem please send them in Issues or Email [:email:](yuanyuan.zhang16@student.xjtlu.edu.cn).
 
@@ -22,10 +22,19 @@ If you find our work helpful for your research, please cite our paper:
   journal={arXiv preprint arXiv:2408.01672 [eess]},
   month={Aug.},
 }
+@article{zhang2024radarODE-MTL,
+  title={radarODE-MTL: A Multi-Task Learning Framework with Eccentric Gradient Alignment for Robust Radar-Based ECG Reconstruction}, 
+  author={Yuanyuan Zhang and Runwei Guan and Lingxiao Li and Rui Yang and Yutao Yue and Eng Gee Lim},
+  year={2024},
+  month={Aug.},
+  journal={arXiv preprint arXiv:[eess]},
+  month={Aug.},
+}
 ```
 
 ## Dataset Download
 Please refer to [MMECG Dataset](https://github.com/jinbochen0823/RCG2ECG) for the Dataset downloading.
+The input size of the radarODE and radarODE-MTL are the spectrograms with size 50x71x120, with 71 for frequency and 120 for 3-sec segments.
 
 ## Run the Model
 You can find the arguments and settings in:
