@@ -8,6 +8,12 @@ Code for Paper:
 
 ``radarODE-MTL`` is an open-source library built on [PyTorch](https://pytorch.org/) and Multi-Task Learning (MTL) framework [LibMTL](https://github.com/median-research-group/LibMTL).
 
+Presentations for:
+
+1. radarODE
+2. radarODE-MTL
+3. Introductions of popular MTL optimization stratigies
+
 :partying_face: Any problem please send them in Issues or Email [:email:](yuanyuan.zhang16@student.xjtlu.edu.cn).
 
 ## Citation
@@ -56,6 +62,13 @@ More details on the available MTL Architectures, Optimization Strategies and Dat
 
 
 ## Quick Introduction
+
+The full presentation for radarODE-MTL is shown in 
+
+```shell
+radarODE/Presentations/radarODE_MTL_Presentation.pdf
+```
+
 ### Overall Framework for radarODE
 <img src='image/radarODE.jpg' width=700>
 
