@@ -143,13 +143,6 @@ def prepare_args(params):
             kwargs['weight_args']['DB_beta'] = params.DB_beta
             kwargs['weight_args']['DB_beta_sigma'] = params.DB_beta_sigma
         elif params.weighting in ['EGA']:
-            if params.EGA_alpha is not None and params.EGA_gamma is not None:
-                kwargs['weight_args']['EGA_T'] = params.EGA_T
-                kwargs['weight_args']['EGA_alpha'] = params.EGA_alpha
-                kwargs['weight_args']['EGA_gamma'] = params.EGA_gamma
-            if params.calpha is not None and params.rescale is not None:
-                kwargs['weight_args']['calpha'] = params.calpha
-                kwargs['weight_args']['rescale'] = params.rescale
             if params.EGA_temp is not None:
                 kwargs['weight_args']['EGA_temp'] = params.EGA_temp
         elif params.weighting in ['STCH']:
@@ -181,6 +174,8 @@ def prepare_args(params):
         if params.scheduler in ['step', 'cos', 'exp']:
             if params.scheduler == 'step':
                 scheduler_param = {'scheduler': 'step', 'step_size': params.step_size, 'gamma': params.gamma}
+            if params.scheduler == 'cos':
+                scheduler_param = {'scheduler': 'cos', 'eta_min': params.eta_min, 'T_max': params.T_max}
         else:
             raise ValueError('No support scheduler method {}'.format(params.scheduler))
     else:

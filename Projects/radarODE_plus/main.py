@@ -15,7 +15,7 @@ from spectrum_dataset import dataset_concat
 from nets.PPI_decoder import PPI_decoder
 from nets.anchor_decoder import anchor_decoder
 from nets.model import backbone, shapeDecoder
-from config import prepare_args
+from LibMTL.config import prepare_args
 import argparse
 
 
