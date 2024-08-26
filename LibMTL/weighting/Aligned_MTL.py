@@ -22,7 +22,6 @@ class Aligned_MTL(AbsWeighting):
             per_grads, grads = grads[0], grads[1]
         
         M = torch.matmul(grads, grads.t()) # [num_tasks, num_tasks]
-        # lmbda, V = torch.symeig(M, eigenvectors=True)
         lmbda, V = torch.linalg.eigh(M, UPLO='L')
 
         tol = (
@@ -37,11 +36,9 @@ class Aligned_MTL(AbsWeighting):
 
         sigma = torch.diag(1 / lmbda.sqrt())
         l = lmbda[-1].sqrt()
-        # l = lmbda.sqrt().mean().abs()
         B = l * ((V @ sigma) @ V.t())
 
         alpha = B.sum(0)
-        # alpha = B.sum(0)*torch.Tensor([5,1,1]).to(self.device)
         if self.rep_grad:
             self._backward_new_grads(alpha, per_grads=per_grads)
         else:

@@ -1,6 +1,7 @@
 import argparse
 import numpy as np
 import torch
+
 _parser = argparse.ArgumentParser(description='Configuration for radarODE_plus')
 # general
 _parser.add_argument('--mode', type=str, default='train', help='train, test')
@@ -64,8 +65,7 @@ _parser.add_argument('--MoCo_rho', type=float, default=0, help='MoCo_rho for MoC
 _parser.add_argument('--DB_beta', type=float, default=0.9, help=' ')
 _parser.add_argument('--DB_beta_sigma', type=float, default=0, help=' ')
 ## EGA
-_parser.add_argument('--EGA_alpha', type=float, default=0.9, help='alpha for EGA')
-_parser.add_argument('--EGA_gamma', type=float, default=1.1, help='gamma for EGA')
+_parser.add_argument('--EGA_temp', type=float, default=1, help='temperature for EGA')
 ## STCH
 _parser.add_argument('--STCH_mu', type=float, default=1.0, help=' ')
 _parser.add_argument('--STCH_warmup_epoch', type=int, default=4, help=' ')
@@ -142,12 +142,8 @@ def prepare_args(params):
             kwargs['weight_args']['DB_beta'] = params.DB_beta
             kwargs['weight_args']['DB_beta_sigma'] = params.DB_beta_sigma
         elif params.weighting in ['EGA']:
-            if params.EGA_alpha is not None and params.EGA_gamma is not None:
-                kwargs['weight_args']['EGA_alpha'] = params.EGA_alpha
-                kwargs['weight_args']['EGA_gamma'] = params.EGA_gamma
-            if params.calpha is not None and params.rescale is not None:
-                kwargs['weight_args']['calpha'] = params.calpha
-                kwargs['weight_args']['rescale'] = params.rescale
+            if params.EGA_temp is not None:
+                kwargs['weight_args']['EGA_temp'] = params.EGA_temp
         elif params.weighting in ['STCH']:
             kwargs['weight_args']['STCH_mu'] = params.STCH_mu
             kwargs['weight_args']['STCH_warmup_epoch'] = params.STCH_warmup_epoch

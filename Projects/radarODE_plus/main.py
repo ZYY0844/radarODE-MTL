@@ -39,11 +39,7 @@ def parse_args(parser):
 def main(params):
     kwargs, optim_param, scheduler_param = prepare_args(params)
     ID_all = np.arange(1, 89)
-    # ID_test = np.array([48, 49, 50 ,51,52,53,54,55,56])
     ID_test = np.array([75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85])
-    # ID_test = np.arange(5,17)
-    # ID_test = np.array([75])
-    # ID_test = np.arange(25, 35)
     ID_train = np.delete(ID_all, ID_test-1)
 
     # ID_test = np.array([1])
@@ -74,11 +70,6 @@ def main(params):
                             'loss_fn': anchorLoss(),
                             'weight': [0]}}
     
-    # task_dict = {'Anchor': {'metrics': ['MSE'],
-    #                         'metrics_fn': anchorMetric(),
-    #                         'loss_fn': anchorLoss(),
-    #                         'weight': [0]}}
-
     # # define backbone and en/decoders
     def encoder_class(): 
         return backbone(in_channels=50)
@@ -87,7 +78,6 @@ def main(params):
                               'PPI': PPI_decoder(output_dim=num_out_channels['PPI']),
                             #   'Anchor': PPI_decoder(output_dim=num_out_channels['Anchor'])})
                               'Anchor': anchor_decoder()})
-    # decoders = nn.ModuleDict({'Anchor': anchor_decoder()})
 
     class radarODE_plus(Trainer):
         def __init__(self, task_dict, weighting, architecture, encoder_class,
@@ -166,28 +156,21 @@ if __name__ == "__main__":
     T_max=100
 
     params = parse_args(LibMTL_args)
-    params.gpu_id = '5'
-    # params.dataset_path = '/home/zhangyuanyuan/Dataset/data_MMECG/data_seg_sce_200/'
-    # params.dataset_path = '/home/zhangyuanyuan/Dataset/data_MMECG/data_seg_sce_pulse/'
-    # params.dataset_path = '/home/zhangyuanyuan/Dataset/data_MMECG/data_seg_sce_middle/'
+    params.gpu_id = '6'
+
     params.dataset_path = '/home/zhangyuanyuan/Dataset/data_MMECG/data_seg_step/'
     params.save_path = '/home/zhangyuanyuan/radarODE_plus_MTL/Model_saved/'
 
-    # params.load_path = '/home/zhangyuanyuan/radarODE_plus_MTL/Model_saved/cur_Aligned_MTL_ode.pt'
     # set device
     set_device(params.gpu_id)
     # set random seed
     set_random_seed(params.seed)
     params.train_bs, params.test_bs = batch_size, batch_size
     params.epochs = n_epochs
-    params.weighting = 'Aligned_MTL'
-    # params.weighting = 'UW'
-    # params.weighting = 'STCH'
-    # params.weighting = 'Given_weight'
-    params.aug_snr = 0
-    # work: , UW, Aligned_MTL, DB_MTL, IMTL, GLS, GradDrop, [MGDA, MoCo](shape failed), [CAGrad, DWA] (shape not good), [PCGrad, RLW, GradVac](shape bad)
-    # tbd:  GradDrop,, RLW,
-    # Failed: EW,  (anchor failed, shape bad), Nash_MTL (failed, but may be caused by bug), GradNorm(shape bad, anchor failed)
+    params.weighting = 'EGA'
+    params.EGA_temp = 1
+    # 100 for no noise otherwise the SNR, 6,3,0,-1,-2,-3 for SNR, 101 for 1 sec extensive abrupt noise, 111 for 1 sec mild abrupt noise
+    params.aug_snr = 100 
     params.rep_grad = False
     params.multi_input = False
     params.arch = 'HPS'
@@ -196,7 +179,6 @@ if __name__ == "__main__":
     params.scheduler = lr_scheduler
     params.eta_min, params.T_max = eta_min, T_max
     params.mode = 'train'
-    params.save_name = f'{params.weighting}_tt'
-    # params.mode = 'cross_vali'
+    params.save_name = f'{params.weighting}'
 
     main(params)

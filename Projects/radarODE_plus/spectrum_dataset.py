@@ -50,11 +50,9 @@ def add_gaussian_sst(sst, snr_db):
 
 # add abrupt noise with certqin length to sst
 def add_abrupt_sst(sst, length = 1): # length 1 sec (length - 100)
-    if length == 30:
-        return sst
-    snr_db = -9
+    snr_db = -9 # extensive noise
     if length>10:
-        snr_db = 0
+        snr_db = 0 # mild noise
         length -= 10
     length = int(length * 30)
     length = sst.shape[-1]-1 if length > sst.shape[-1] else length
