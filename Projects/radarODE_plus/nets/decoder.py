@@ -181,14 +181,6 @@ class TransformerDecoder(nn.Module):
     
 if __name__ == '__main__':
     model = CNNLSTMDecoder()
-    # input_dim = 2001  # dimension of signal index from -1 to 1
-    # hidden_dim = 80  # dimension of embedding
-    # num_layers = 6
-    # output_dim = 1
-    # embed_dim = hidden_dim
-    # nhead = 8
-    # model = RegressionTransformer(
-    #     input_dim, output_dim, nhead, hidden_dim, embed_dim, num_layers)
     input_shape = (2, 128, 863)
     input_data = torch.randn(input_shape)
     output_data = model(input_data)
