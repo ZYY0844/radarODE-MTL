@@ -32,7 +32,7 @@ def parse_args(parser):
     # if True, only select 100 samples for training and testing
     parser.add_argument('--select_sample', default=False,
                         type=bool, help='select sample')
-    parser.add_argument('--aug_snr', default=0, type=int, help='0 for no aug otherwise the SNR')
+    parser.add_argument('--aug_snr', default=100, type=int, help='100 for no aug otherwise the SNR')
     return parser.parse_args()
 
 

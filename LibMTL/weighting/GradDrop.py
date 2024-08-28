@@ -5,7 +5,6 @@ import numpy as np
 
 from LibMTL.weighting.abstract_weighting import AbsWeighting
 
-
 class GradDrop(AbsWeighting):
     r"""Gradient Sign Dropout (GradDrop).
     
