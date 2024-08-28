@@ -38,10 +38,26 @@ If you find our work helpful for your research, please cite our paper:
 }
 ```
 
-## Dataset Download
+## Dataset Download and Preparation
 Please refer to [MMECG Dataset](https://github.com/jinbochen0823/RCG2ECG) for the Dataset downloading.
 
-The input size of the radarODE and radarODE-MTL are the spectrograms with size 50x71x120, with 71 for frequency and 120 for 3-sec segments.
+The file structure is
+```
+Dataset
+└───obj1_NB_1_
+│   │   sst_seg_0.npy
+│   │   anchor_seg_0.npy 
+│   │   ecg_seg_0.npy
+│   │   ...
+│   ...
+└───obj30_PE_91_
+│   │   ...
+│   │   sst_seg_215.npy
+│   │   anchor_seg_215.npy 
+│   │   ecg_seg_215.npy
+```
+
+The input size of the radarODE and radarODE-MTL are the spectrograms with size 50x71x120 (e.g., sst_seg_0.npy), with 71 for frequency and 120 for 3-sec segments. The ground truth ECG, anchor, cycle length can be fomulated as in the paper.
 
 ## Run the Model
 You can find the arguments and settings in:
