@@ -7,7 +7,7 @@ from LibMTL.weighting.abstract_weighting import AbsWeighting
 class EGA(AbsWeighting):
     r"""Eccentric Gradient Alignment.
         Args:
-        EGA_temp (float, default=1.0): The softmax temperature.
+        EGA_temp (float, default=1.0): The softmax temperature, large value means equal weight.
     """
     def __init__(self):
         super(EGA, self).__init__()

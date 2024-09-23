@@ -72,10 +72,6 @@ radarODE-MTL/Projects/radarODE_plus/nets/model.py
 ```
 
 More details on the available MTL Architectures, Optimization Strategies and Datasets please refer to [LibMTL](https://github.com/median-research-group/LibMTL).
-<!-- ## Contributor
-
-``LibMTL`` is developed and maintained by [Baijiong Lin](https://baijiong-lin.github.io). -->
-
 
 ## Quick Introduction
 
