@@ -34,7 +34,7 @@ If you find our work helpful for your research, please cite our paper:
   year={2024},
   month={Aug.},
   journal={arXiv preprint arXiv:[eess]},
-  month={Aug.},
+  month={Oct.},
 }
 ```
 
