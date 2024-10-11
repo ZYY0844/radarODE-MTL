@@ -30,7 +30,7 @@ If you find our work helpful for your research, please cite our paper:
 }
 @article{zhang2024radarODE-MTL,
   title={radarODE-MTL: A Multi-Task Learning Framework with Eccentric Gradient Alignment for Robust Radar-Based ECG Reconstruction}, 
-  author={Yuanyuan Zhang and Runwei Guan and Lingxiao Li and Rui Yang and Yutao Yue and Eng Gee Lim},
+  author={Yuanyuan Zhang and Rui Yang and Yutao Yue and Eng Gee Lim},
   year={2024},
   month={Aug.},
   journal={arXiv preprint arXiv:[eess]},
