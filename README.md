@@ -12,7 +12,7 @@ Presentations for:
 
 1. radarODE
 2. radarODE-MTL
-3. Introductions of popular MTL optimization stratigies
+3. Introduction of popular MTL optimization stratigies
 
 :partying_face: Any problem please send them in Issues or Email [:email:](yuanyuan.zhang16@student.xjtlu.edu.cn).
 
