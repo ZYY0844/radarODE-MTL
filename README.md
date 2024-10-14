@@ -6,7 +6,7 @@
 Code for Paper: 
 
 1. [radarODE: An ODE-embedded deep learning model for contactless ECG reconstruction from millimeter-wave radar](https://arxiv.org/abs/2408.01672)
-2. radarODE-MTL: A Multi-Task Learning Framework with Eccentric Gradient Alignment for Robust Radar-Based ECG Reconstruction
+2. [radarODE-MTL: A Multi-Task Learning Framework with Eccentric Gradient Alignment for Robust Radar-Based ECG Reconstruction](https://arxiv.org/abs/2410.08656)
 
 Presentations for:
 
@@ -24,16 +24,14 @@ If you find our work helpful for your research, please cite our paper:
   title={{radarODE: An ODE-embedded deep learning model for contactless ECG reconstruction from millimeter-wave radar}}, 
   author={Yuanyuan Zhang and Runwei Guan and Lingxiao Li and Rui Yang and Yutao Yue and Eng Gee Lim},
   year={2024},
-  month={Aug.},
   journal={arXiv preprint arXiv:2408.01672 [eess]},
   month={Aug.},
 }
 @article{zhang2024radarODE-MTL,
-  title={radarODE-MTL: A Multi-Task Learning Framework with Eccentric Gradient Alignment for Robust Radar-Based ECG Reconstruction}, 
+  title={radarODE-MTL: A Multi-task learning tramework with eccentric gradient alignment for robust radar-based {ECG} reconstruction}, 
   author={Yuanyuan Zhang and Rui Yang and Yutao Yue and Eng Gee Lim},
   year={2024},
-  month={Aug.},
-  journal={arXiv preprint arXiv:[eess]},
+  journal={arXiv preprint arXiv:2410.08656 [eess]},
   month={Oct.},
 }
 ```
