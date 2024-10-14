@@ -78,18 +78,14 @@ The full presentation for radarODE-MTL is shown in
 ```shell
 radarODE/Presentations/radarODE_MTL_Presentation.pdf
 ```
-
+<!-- 
 ### Overall Framework for radarODE
 <img src='image/radarODE.jpg' width=700>
 
 ### Overall Framework for radarODE-MTL
 <img src='image/radarODE_MTL.jpg' width=700>
+ -->
 
-### Intuition behind ECG recovery based on signle cardiac cycle
-<img src='image/scg_ecg.jpg' width=350>
-
-### Result from our methods in the presence body movement
-<img src='image/result.jpg' width=700>
 
 ## License
 
