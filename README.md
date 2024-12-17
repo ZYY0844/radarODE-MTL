@@ -55,7 +55,8 @@ Dataset
 │   │   ecg_seg_215.npy
 ```
 
-The input size of the radarODE and radarODE-MTL are the spectrograms with size 50x71x120 (e.g., sst_seg_0.npy), with 71 for frequency and 120 for 3-sec segments. The ground truth ECG, anchor, cycle length can be fomulated as in the paper.
+The input size of the radarODE and radarODE-MTL are the spectrograms with size 50x71x120 (e.g., sst_seg_0.npy), with 71 for frequency and 120 for 3-sec segments. The ground truth ECG, anchor, cycle length can be fomulated as in the paper. You may use the example code [MMECG_to_SST
+](MMECG_to_SST.m) to generate SST spectrograms, or any time-frequency representation tools are applicable.
 
 ## Run the Model
 You can find the arguments and settings in:
