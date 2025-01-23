@@ -19,7 +19,8 @@ Radar-based vital sign monitoring has been invested in for decades, and the comm
 
 The transformation from the radar signal to ECG is hard to model mathmatically and only realized using deep learning. Appraently, the deep learning model itself can hardly gain noise robustness
 
-Illustration of Robustness under differnt radar quality
+**Illustration of robustness under differnt radar qualities**
+
 <img src='image/radarODE_MTL_result.jpg' width=700>
 
 ## Citation
