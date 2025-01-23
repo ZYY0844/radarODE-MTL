@@ -1,6 +1,10 @@
 # radarODE-MTL
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Famazing0844%2FradarODE-MTL&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=vistors&edge_flat=false)](https://hits.seeyoufarm.com)
 
+## Intuitive Explanation and Introduction
+Radar-based vital sign monitoring has been invested for a long time, and the community is always pursuing on capturing more fine-grained cardiac signal with better noise robustness (especially for body movement or moving subjects). This repository contains two of our studies to improve the robustness of ECG recovery using the multi-task learning (MTL) paradigm.
+
+##
 ``radarODE-MTL`` is an open-source library built on [PyTorch](https://pytorch.org/) and Multi-Task Learning (MTL) framework [LibMTL](https://github.com/median-research-group/LibMTL).
 
 Code for Paper: 
