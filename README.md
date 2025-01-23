@@ -1,25 +1,24 @@
 # radarODE-MTL
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Famazing0844%2FradarODE-MTL&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=vistors&edge_flat=false)](https://hits.seeyoufarm.com)
 
-## Intuitive Explanation and Introduction
-Radar-based vital sign monitoring has been invested for a long time, and the community is always pursuing on capturing more fine-grained cardiac signal with better noise robustness (especially for body movement or moving subjects). This repository contains two of our studies to improve the robustness of ECG recovery using the multi-task learning (MTL) paradigm.
-
-##
-``radarODE-MTL`` is an open-source library built on [PyTorch](https://pytorch.org/) and Multi-Task Learning (MTL) framework [LibMTL](https://github.com/median-research-group/LibMTL).
-
+``radarODE-MTL`` is an open-source repository built on [PyTorch](https://pytorch.org/) and Multi-Task Learning (MTL) framework [LibMTL](https://github.com/median-research-group/LibMTL) and contains:
 Code for Paper: 
-
 1. [radarODE: An ODE-embedded deep learning model for contactless ECG reconstruction from millimeter-wave radar](https://arxiv.org/abs/2408.01672)
 2. [radarODE-MTL: A Multi-Task Learning Framework with Eccentric Gradient Alignment for Robust Radar-Based ECG Reconstruction](https://arxiv.org/abs/2410.08656)
-
 Presentations for:
-
 1. radarODE
 2. radarODE-MTL
 3. Introduction of popular MTL optimization stratigies
 
 :partying_face: Any problem please send them in Issues or Email [:email:](yuanyuan.zhang16@student.xjtlu.edu.cn).
 
+## Intuitive Explanation and Introduction
+Radar-based vital sign monitoring has been invested for decades, and the community is always pursuing on capturing more fine-grained cardiac signal with better noise robustness (especially for body movement or moving subjects). This repository contains two of our studies to improve the robustness of ECG recovery using the multi-task learning (MTL) paradigm and ordinary differential equation (ODE).
+
+We
+
+
+**radarODE** 
 ## Citation
 
 If you find our work helpful for your research, please cite our paper:
