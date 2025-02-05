@@ -15,7 +15,7 @@ Presentations for:
 :partying_face: Any problem please send them in Issues or Email [:email:](yuanyuan.zhang16@student.xjtlu.edu.cn).
 
 ## Intuitive Explanation and Introduction
-Radar-based vital sign monitoring has been invested in for decades, and the community always pursue capturing more fine-grained cardiac signals with better noise robustness (especially for body movement or moving subjects). 
+Radar-based vital sign monitoring has been invested in for decades, and the community always pursues capturing more fine-grained cardiac signals with better noise robustness (especially for body movement or moving subjects). 
 
 This repository contains two of our studies to improve the robustness of ECG recovery using the multi-task learning (MTL) paradigm and ordinary differential equation (ODE), with **radarODE** mainly improving the robust single-cycle ECG recovery and **radarODE-MTL** focusing on the long-term ECG recovery eventually.
 
