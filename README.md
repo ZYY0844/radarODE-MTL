@@ -15,9 +15,11 @@ Presentations for:
 :partying_face: Any problem please send them in Issues or Email [:email:](yuanyuan.zhang16@student.xjtlu.edu.cn).
 
 ## Intuitive Explanation and Introduction
-Radar-based vital sign monitoring has been invested in for decades, and the community is always pursuing capturing more fine-grained cardiac signals with better noise robustness (especially for body movement or moving subjects). This repository contains two of our studies to improve the robustness of ECG recovery using the multi-task learning (MTL) paradigm and ordinary differential equation (ODE), with **radarODE** mainly improving the robust single-cycle ECG recovery and **radarODE-MTL** focusing on the long-term ECG recovery eventually.
+Radar-based vital sign monitoring has been invested in for decades, and the community always pursue capturing more fine-grained cardiac signals with better noise robustness (especially for body movement or moving subjects). 
 
-The transformation from the radar signal to ECG is hard to model mathmatically and only realized using deep learning. Appraently, the deep learning model itself can hardly gain noise robustness
+This repository contains two of our studies to improve the robustness of ECG recovery using the multi-task learning (MTL) paradigm and ordinary differential equation (ODE), with **radarODE** mainly improving the robust single-cycle ECG recovery and **radarODE-MTL** focusing on the long-term ECG recovery eventually.
+
+The core idea of radarODE is to deconstruct the long-term cardiac activities into individual cardiac cycles and leverage the robustness provided by the ODE decoder to generate faithful ECG reference that aids the domain transformation in long-term ECG recovery. 
 
 **Illustration of robustness under differnt radar qualities**
 
