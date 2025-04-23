@@ -32,16 +32,18 @@ If you find our work helpful for your research, please cite our paper:
 @article{zhang2024radarODE,
   title={{radarODE: An ODE-embedded deep learning model for contactless ECG reconstruction from millimeter-wave radar}}, 
   author={Yuanyuan Zhang and Runwei Guan and Lingxiao Li and Rui Yang and Yutao Yue and Eng Gee Lim},
-  year={2024},
-  journal={arXiv preprint arXiv:2408.01672 [eess]},
-  month={Aug.},
+  journal={IEEE Transactions on Mobile Computing},
+  year={2025},
+  publisher={IEEE},
+  month={Apr.}
 }
 @article{zhang2024radarODE-MTL,
-  title={radarODE-MTL: A Multi-task learning tramework with eccentric gradient alignment for robust radar-based {ECG} reconstruction}, 
+  title={{radarODE-MTL}: A Multi-task learning tramework with eccentric gradient alignment for robust radar-based {ECG} reconstruction}, 
   author={Yuanyuan Zhang and Rui Yang and Yutao Yue and Eng Gee Lim},
-  year={2024},
-  journal={arXiv preprint arXiv:2410.08656 [eess]},
-  month={Oct.},
+  journal={IEEE Transactions on Instrumentation and Measurement},
+  year={2025},
+  publisher={IEEE},
+  month={Apr.}
 }
 ```
 
