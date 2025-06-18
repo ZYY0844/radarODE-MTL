@@ -81,7 +81,7 @@ radarODE-MTL/Projects/radarODE_plus/nets/model.py
 ```
 
 ### Tips
-If you only want to realize the ECG recovery and do not care too much about noise robustness, please change [here](https://github.com/ZYY0844/radarODE-MTL/blob/54f4bb658dad03778d2e47032d6482819fe76791/Projects/radarODE_plus/main.py#L170) to ``Given_weight``, and dierctly use 4-sec ECG as ground truth.
+If you only want to realize the ECG recovery and do not care too much about noise robustness, please change [here](https://github.com/ZYY0844/radarODE-MTL/blob/54f4bb658dad03778d2e47032d6482819fe76791/Projects/radarODE_plus/main.py#L170) to ``Given_weight``, and directly use 4-sec ECG as ground truth.
 
 More details on the available MTL Architectures, Optimization Strategies and Datasets please refer to [LibMTL](https://github.com/median-research-group/LibMTL).
 
